@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+#This script lists files in your directory in a list
+
+for file in *; do
+  if [[ -f "$file" && "$file" != .* && "$file" =~ ^[^-]+-(.*)$ ]]; then
+    echo "${BASH_REMATCH[1]}"
+  fi
+done
+
