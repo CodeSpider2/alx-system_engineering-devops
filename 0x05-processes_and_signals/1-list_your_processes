@@ -1,11 +1,5 @@
 #!/usr/bin/env bash
-# Get all processes running
-header=$(ps axo user,pid,%cpu,%mem,vsz,rss,tty,stat,start,time,command | head -n 1)
+# Get all processes currently running
 
-# Get the list of processes with their hierarchy and append the header
-processes=$(ps axo user,pid,ppid,%cpu,%mem,vsz,rss,tty,stat,start,time,command --forest | sed '1d')
-
-# Display the header and processes
-echo "$header"
-echo "$processes"
+ps auxf
 
