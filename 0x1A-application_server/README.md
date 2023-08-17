@@ -1,0 +1,1 @@
+Navigate to the web_flask directory within the cloned repository. Inside this directory, you'll find the 0-hello_route.py file. Open this file in a text editor and configure it to serve its content from the route /airbnb-onepage/ on port 5000. The Flask application object should be named app.
